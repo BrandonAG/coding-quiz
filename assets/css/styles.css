@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: lightgrey;
+    margin: 2px auto;
+    padding: 4px;
+}
+
+#questions {
+    margin: auto;
+    width: min-content;
+    min-width: 50%;
+}
+
+#scores {
+    margin: auto;
+    margin-top: 10vw;
+    width: min-content;
+    min-width: 50%;
+}
+
+.start-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: min-content;
+}
+
+button {
+    /* width: min-content; */
+    width: max-content;
+    margin: 2px 0;
+    padding: 8px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
+
+.flex-container button {
+    text-align: left;
+    width: 100%;
+    /* margin: 2px 0;
+    padding: 8px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px; */
+}
+
+.result {
+    margin: 8px 0;
+    padding: 4px;
+    border-top: 1px solid;
+}
+
+#correct {
+    color: green;
+}
+
+#incorrect {
+    color: red;
+}
+
+#submit-score {
+    margin: 0 4px;
+    padding: 7px;
+}
+
+label {
+    margin: 0 2px;
+    padding: 4px;
+}
+
+input {
+    margin: 0 2px;
+    padding: 4px;
+}
+
+#high-scores button {
+    margin: 0;
+    margin-right: 8px;
+}
