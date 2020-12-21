@@ -164,6 +164,8 @@ function scoreEntry() {
     scoreTitle.textContent = "All Done";
     var scoreDisplay = document.createElement("p");
     scoreDisplay.textContent = "Your final score is " + score;
+    var inputBox = document.createElement("div");
+    inputBox.setAttribute("class", "input-box")
     var userLabel = document.createElement("label");
     userLabel.setAttribute("for", "initials");
     userLabel.textContent = "Enter initials";
@@ -176,9 +178,10 @@ function scoreEntry() {
 
     questions.appendChild(scoreTitle);
     questions.appendChild(scoreDisplay);
-    questions.appendChild(userLabel);
-    questions.appendChild(userEntry);
-    questions.appendChild(submitBtn);
+    questions.appendChild(inputBox);
+    inputBox.appendChild(userLabel);
+    inputBox.appendChild(userEntry);
+    inputBox.appendChild(submitBtn);
 
     document.getElementById("submit-score").addEventListener("click", function() {
         console.log(document.getElementById("initials").value);
